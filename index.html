@@ -11,7 +11,142 @@
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Poppins:400,500,600|Sacramento&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+    <!-- Svg -->
+    <svg style="display: none;">
+        <symbol viewBox="0 0 512 512" id = "Price">
+            <g>
+                <g>
+                    <path d="M437.02,74.98C388.668,26.628,324.38,0,256,0S123.332,26.628,74.98,74.98C26.629,123.332,0,187.62,0,256
+                        s26.629,132.668,74.98,181.02C123.332,485.372,187.62,512,256,512s132.668-26.628,181.02-74.98
+                        C485.371,388.668,512,324.38,512,256S485.371,123.332,437.02,74.98z M256,482C131.383,482,30,380.617,30,256S131.383,30,256,30
+                        s226,101.383,226,226S380.617,482,256,482z"/>
+                </g>
+            </g>
+            <g>
+                <g>
+                    <path d="M272.067,241h-32.134c-18.307,0-33.2-14.893-33.2-33.199c0-18.307,14.894-33.2,33.2-33.2H304.2c8.284,0,15-6.716,15-15
+                        s-6.716-15-15-15H271v-33.2c0-8.284-6.716-15-15-15s-15,6.716-15,15v33.2h-1.066c-34.849,0-63.2,28.352-63.2,63.2
+                        c0,34.848,28.352,63.199,63.2,63.199h32.134c18.306,0,33.199,14.894,33.199,33.2c0,18.306-14.893,33.2-33.199,33.2h-64.267
+                        c-8.284,0-15,6.716-15,15s6.716,15,15,15H241v33.201c0,8.284,6.716,15,15,15s15-6.716,15-15V367.4h1.067
+                        c34.848,0,63.199-28.352,63.199-63.2S306.915,241,272.067,241z"/>
+                </g>
+            </g>
+        </symbol>
+        <symbol viewBox="0 0 368 368" id = "Time">
+            <g>
+            <g>
+                <g>
+                    <path d="M184,60c4.4,0,8-3.6,8-8v-4c0-4.4-3.6-8-8-8c-4.4,0-8,3.6-8,8v4C176,56.4,179.6,60,184,60z"/>
+                    <path d="M184,308c-4.4,0-8,3.6-8,8v4c0,4.4,3.6,8,8,8c4.4,0,8-3.6,8-8v-4C192,311.6,188.4,308,184,308z"/>
+                    <path d="M52,176h-4c-4.4,0-8,3.6-8,8c0,4.4,3.6,8,8,8h4c4.4,0,8-3.6,8-8C60,179.6,56.4,176,52,176z"/>
+                    <path d="M320,176h-4c-4.4,0-8,3.6-8,8c0,4.4,3.6,8,8,8h4c4.4,0,8-3.6,8-8C328,179.6,324.4,176,320,176z"/>
+                    <path d="M93.6,82.4c-3.2-3.2-8-3.2-11.2,0c-3.2,3.2-3.2,8,0,11.2l2.8,2.8c1.6,1.6,3.6,2.4,5.6,2.4s4-0.8,5.6-2.4
+                        c3.2-3.2,3.2-8,0-11.2L93.6,82.4z"/>
+                    <path d="M85.2,271.6l-2.8,2.8c-3.2,3.2-3.2,8,0,11.2C84,287.2,86,288,88,288s4-0.8,5.6-2.4l2.8-2.8c3.2-3.2,3.2-8,0-11.2
+                        S88.4,268.4,85.2,271.6z"/>
+                    <path d="M274.4,82.4l-2.8,2.8c-3.2,3.2-3.2,8,0,11.2c1.6,1.6,3.6,2.4,5.6,2.4s4-0.8,5.6-2.4l2.8-2.8c3.2-3.2,3.2-8,0-11.2
+                        C282.4,79.2,277.6,79.2,274.4,82.4z"/>
+                    <path d="M192,180.8V108c0-4.4-3.6-8-8-8c-4.4,0-8,3.6-8,8v76c0,2,0.8,4,2.4,5.6l87.6,87.6c1.6,1.6,3.6,2.4,5.6,2.4s4-0.8,5.6-2.4
+                        c3.2-3.2,3.2-8,0-11.2L192,180.8z"/>
+                    <path d="M184,0C82.4,0,0,82.4,0,184s82.4,184,184,184s184-82.4,184-184S285.6,0,184,0z M184,352c-92.8,0-168-75.2-168-168
+                        S91.2,16,184,16s168,75.2,168,168S276.8,352,184,352z"/>
+                </g>
+            </g>
+        </g>
+        </symbol>
+        <symbol viewBox="0 0 305.002 305.002" id = "Guranteed">
+            <g>
+                <g>
+                    <path d="M152.502,0.001C68.412,0.001,0,68.412,0,152.501s68.412,152.5,152.502,152.5c84.089,0,152.5-68.411,152.5-152.5
+                        S236.591,0.001,152.502,0.001z M152.502,280.001C82.197,280.001,25,222.806,25,152.501c0-70.304,57.197-127.5,127.502-127.5
+                        c70.304,0,127.5,57.196,127.5,127.5C280.002,222.806,222.806,280.001,152.502,280.001z"/>
+                    <path d="M218.473,93.97l-90.546,90.547l-41.398-41.398c-4.882-4.881-12.796-4.881-17.678,0c-4.881,4.882-4.881,12.796,0,17.678
+                        l50.237,50.237c2.441,2.44,5.64,3.661,8.839,3.661c3.199,0,6.398-1.221,8.839-3.661l99.385-99.385
+                        c4.881-4.882,4.881-12.796,0-17.678C231.269,89.089,223.354,89.089,218.473,93.97z"/>
+                </g>
+            </g>
+        </symbol>
+    </svg>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo"><a href="#"><span class = "header__logo_start">A</span>lexis</a></div>
+                
+                <nav class="header__nav">
+                    <ul class="header-list">
+                        <li class = "header-list__nav"><a class = "header-list__link" href="#">About Us</a></li>
+                        <li class = "header-list__nav"><a class = "header-list__link" href="#">Our Focus</a></li>
+                        <li class = "header-list__nav"><a class = "header-list__link" href="#">Portfolio</a></li>
+                        <li class = "header-list__nav"><a class = "header-list__link" href="#">Our Team</a></li>
+                        <li class = "header-list__nav"><a class = "header-list__link" href="#">Work Steps</a></li>
+                        <li class = "header-list__nav"><a class = "header-list__link" href="#">Pricing</a></li>
+                        <li class = "header-list__nav"><a class = "header-list__link" href="#">Testimonials</a></li>
+                        <li class = "header-list__nav"><a class = "header-list__link" href="#">Blog</a></li>
+                        <li class = "header-list__nav"><a class = "header-list__link" href="#">Contact</a></li>
+                        <li class = "header-list__nav"><a class = "header-list__link" href="#">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__body">
+                    <div class="hero-wrapper">
+                        <div class="header-wrapper-top">
+                            <h1 class="hero-wrapper-top__title">We design things with love and passion.</h1>
+                            <div class="hero-wrapper-top__button"><a class="hero-wrapper-top__btn"><span>Our Works</span></a></div>
+                        </div>
+                        <div class="hero-wrapper__features">
+                            <div class="hero-wrapper__column">
+                                <div class="hero-wrapper-item">
+                                    <div class="hero-wrapper-item__iccon">
+                                        <a href="#">
+                                            <svg class = "hero-wrapper-item__link">
+                                                <use xlink:href = "#Price"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <h4 class="hero-wrapper-item__title">Fixed price projects</h4>
+                                </div>
+                            </div>
+                            <div class="hero-wrapper__column">
+                                <div class="hero-wrapper-item">
+                                    <div class="hero-wrapper-item__iccon">
+                                        <a href="#">
+                                            <svg class = "hero-wrapper-item__link hero-wrapper-item__link--2">
+                                                <use xlink:href = "#Time"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <h4 class="hero-wrapper-item__title hero-wrapper-item__title--2">Receive on time</h4>
+                                </div>
+                            </div>
+                            <div class="hero-wrapper__column">
+                                <div class="hero-wrapper-item">
+                                    <div class="hero-wrapper-item__iccon">
+                                        <a href="#">
+                                            <svg class = "hero-wrapper-item__link hero-wrapper-item__link--3">
+                                                <use xlink:href = "#Guranteed"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <h4 class="hero-wrapper-item__title hero-wrapper-item__title--3">Satisfaction guranteed</h4>
+                                </div>
+                            </div>
+                        </div> <!-- /features-->
+                    </div>
+                </div> <!-- /body-->
+            </div>
+        </section>
+
+        
+    </main>
     
 </body>
 </html>

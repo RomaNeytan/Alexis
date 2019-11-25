@@ -1,0 +1,60 @@
+.header{
+    background: #fff;
+    padding: 24px 0;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        a{
+            color:$main-color;
+        }
+        line-height: 0.771;
+        font-size: 35px;
+        @include fWisd;
+
+        &_start{
+            color:#fc5f45;
+        }
+    }
+    &__nav{
+
+    }
+    &-list{
+        display: flex;
+        &__nav{
+            & + &{
+                margin-left: 18px;
+            }
+        }
+        &__link{
+            font-size: 14px;
+            color:#272727;
+            font-weight: 600;
+            position: relative;
+            
+            &:hover{
+                &:after{
+                    width: 100%;
+                }
+            }
+
+            &:after{
+                content: " ";
+                display: block;
+                width: 0;
+                height: 2px;
+                background: #fc5f45;
+                position: absolute;
+                top:100%;
+                left: 0;
+                z-index: 1;
+
+                transition: width .2s linear;
+            }
+        }
+    }
+}
+
+  
