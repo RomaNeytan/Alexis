@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Wisdom Script AJ";
+  src: url("../fonts/Wisdom Script AJ.otf"); }
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #616161;
+  -webkit-font-smoothing: antialiased; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+ul li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto; }
