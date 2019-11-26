@@ -30,13 +30,24 @@ a{
     text-decoration: none;
 }
 
+p{
+    margin: 0 0 4px;
+}
+
 // Grid
 
 @import "grid.scss";
+
+// Section-header
+
+@import "section-header.scss";
 
 // Blocks
 
 @import "blocks/header";
 @import "blocks/hero";
+@import "blocks/about";
+@import "blocks/services";
+
 
 

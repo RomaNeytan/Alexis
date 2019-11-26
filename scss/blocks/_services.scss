@@ -1,0 +1,46 @@
+.services{
+    background: #f7f7f7;
+    padding: 120px 0;
+    &__inner{
+        display: flex;
+        margin-top: 75px;
+    }
+    &__column{
+        & + &{
+            margin-left: 30px;
+        }
+        padding: 60px 20px;
+        border-bottom: 3px solid #fc5f45;
+        flex-basis: 0 1 25%;
+        background: #fff;
+        box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
+
+        &_2{
+            border-bottom: 3px solid #38c695;
+        }
+        &_3{
+            border-bottom: 3px solid #b27cf5;
+        }
+        &_4{
+            border-bottom: 3px solid #feb960;
+        }
+    }
+    &-item{
+        text-align: center;
+        &__iccon{
+            margin-bottom: 20px;
+        }
+        &__title{
+            font-size: 20px;
+            color:$main-color;
+            font-weight: 500;
+            margin-bottom:30px;
+        }
+        &__description{
+            font-size: 15px;
+            color:$main-color;
+            line-height: 1.667;
+        }
+    }
+}
+

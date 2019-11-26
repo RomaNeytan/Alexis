@@ -25,10 +25,25 @@ ul {
 a {
   text-decoration: none; }
 
+p {
+  margin: 0 0 4px; }
+
 .container {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto; }
+
+.section-header {
+  text-align: center; }
+  .section-header__title {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 10px;
+    color: #313131; }
+  .section-header__text {
+    font-size: 18px;
+    color: #616161; }
 
 .header {
   background: #fff;
@@ -146,3 +161,80 @@ a {
         color: #b27cf5; }
       .hero-wrapper-item__title--3 {
         color: #feb960; }
+
+.about {
+  background: #fff;
+  padding: 150px 0; }
+  .about__body {
+    position: relative; }
+  .about__img img {
+    max-width: 100%;
+    height: auto;
+    display: block; }
+  .about__content {
+    width: 650px;
+    height: 550px;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    padding: 80px 70px 80px 75px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    z-index: 1;
+    transform: translate3d(0, -50%, 0); }
+    .about__content::after {
+      content: " ";
+      display: block;
+      background: url("../../images/about us/Lines.png") no-repeat bottom;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      bottom: 0;
+      z-index: 1; }
+  .about__title {
+    font-size: 50px;
+    color: #313131;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    margin-bottom: 25px; }
+  .about__text {
+    font-size: 15px;
+    color: #616161;
+    line-height: 1.8; }
+    .about__text + .about__text {
+      margin-top: 20px; }
+
+.services {
+  background: #f7f7f7;
+  padding: 120px 0; }
+  .services__inner {
+    display: flex;
+    margin-top: 75px; }
+  .services__column {
+    padding: 60px 20px;
+    border-bottom: 3px solid #fc5f45;
+    flex-basis: 0 1 25%;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1); }
+    .services__column + .services__column {
+      margin-left: 30px; }
+    .services__column_2 {
+      border-bottom: 3px solid #38c695; }
+    .services__column_3 {
+      border-bottom: 3px solid #b27cf5; }
+    .services__column_4 {
+      border-bottom: 3px solid #feb960; }
+  .services-item {
+    text-align: center; }
+    .services-item__iccon {
+      margin-bottom: 20px; }
+    .services-item__title {
+      font-size: 20px;
+      color: #616161;
+      font-weight: 500;
+      margin-bottom: 30px; }
+    .services-item__description {
+      font-size: 15px;
+      color: #616161;
+      line-height: 1.667; }
