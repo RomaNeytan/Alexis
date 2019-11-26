@@ -1,0 +1,68 @@
+.portfolio{
+    background: #ffffff;
+    padding: 120px 0 95px;
+    &__body{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 70px -10px 0;
+    }
+    &__column{
+        flex:0 1 33.33333%;
+        padding: 0 10px 25px;
+        
+    }
+    &-item{
+        position: relative;
+        box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
+
+        &:hover{
+            padding: 5px 5px 0 5px;
+            &:after{
+                opacity: 1;
+            }
+            .portfolio-item__hover{
+                display: block;
+            }
+            .portfolio-item__iccon{
+                position: absolute;
+                top:50%;
+                left:50%;
+                z-index: 100;
+                transform: translate3d(-50%,-100%,0);
+            }
+
+            .portfolio-item__img::after{
+                content: " ";
+                display: block;
+                width: 100%;
+                height: 3px;
+                background: url("../../images/about us/Lines.png")no-repeat bottom;
+            }
+    
+            .portfolio-item__img img{
+                height: 225px;
+            }
+        }
+        
+        &__img{
+            img{
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+        &__hover{
+            text-align: center;
+            padding: 25px 0;
+            display: none;
+        }
+
+        &__title{
+            font-size: 18px;
+            font-weight: 500;
+            color:$title-color;
+        }
+    }
+}
+
+
