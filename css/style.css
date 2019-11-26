@@ -238,3 +238,22 @@ p {
       font-size: 15px;
       color: #616161;
       line-height: 1.667; }
+
+.section-video {
+  background: rgba(38, 39, 50, 0.85);
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .section-video__inner {
+    text-align: center; }
+  .section-video__title {
+    font-size: 30px;
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 25PX; }
+  .section-video__iccon {
+    margin-bottom: 25px; }
+  .section-video__text {
+    font-size: 15px;
+    color: #ffffff; }
