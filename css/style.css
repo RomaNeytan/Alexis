@@ -303,3 +303,103 @@ p {
       font-size: 18px;
       font-weight: 500;
       color: #313131; }
+
+.team {
+  background: #f7f7f7;
+  padding: 140px 0; }
+  .team__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px; }
+  .team__column {
+    background: #fff;
+    flex: 0 1 25%;
+    border-bottom: 3px solid #fc5f45; }
+    .team__column + .team__column {
+      margin-left: 25px; }
+    .team__column_2 {
+      border-bottom: 3px solid #38c695; }
+    .team__column_3 {
+      border-bottom: 3px solid #b27cf5; }
+    .team__column_4 {
+      border-bottom: 3px solid #feb960; }
+  .team-item {
+    padding: 5px 5px 0 5px; }
+    .team-item__name {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 18px;
+      color: #fc5f45;
+      font-weight: 500; }
+      .team-item__name_2 {
+        color: #38c695; }
+      .team-item__name_3 {
+        color: #b27cf5; }
+      .team-item__name_4 {
+        color: #feb960; }
+    .team-item__pos {
+      margin-top: 7px;
+      padding-bottom: 15px;
+      font-size: 13px;
+      color: #616161;
+      text-align: center; }
+  .team-footer {
+    position: relative;
+    margin-right: -27px;
+    margin-top: 45px;
+    background: #fff;
+    padding: 70px 100px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1); }
+    .team-footer:before {
+      content: " ";
+      display: block;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 28.5px 37px 28.5px;
+      border-color: transparent transparent #fff transparent;
+      position: absolute;
+      top: -37px;
+      left: 100px;
+      z-index: 1; }
+    .team-footer__title {
+      font-size: 20px;
+      font-weight: 500;
+      color: #272727;
+      margin-bottom: 20px; }
+    .team-footer__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .team-footer__text {
+      font-size: 15px;
+      color: #616161;
+      flex: 0 0 70%; }
+    .team-footer__iccon {
+      display: flex;
+      align-items: center;
+      padding-left: 20px; }
+    .team-footer__img {
+      padding-right: 30px;
+      position: relative; }
+      .team-footer__img:before {
+        content: " ";
+        display: block;
+        width: 2px;
+        height: 150px;
+        background: #efefef;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate3d(-50%, -50%, 0); }
+    .team-footer__social {
+      padding-left: 22px; }
+    .team-footer-list__item + .team-footer-list__item {
+      margin-top: 10px; }
+    .team-footer-list__link {
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      color: #616161; }
+      .team-footer-list__link span {
+        margin-left: 7px; }
