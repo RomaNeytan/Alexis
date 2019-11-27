@@ -403,3 +403,104 @@ p {
       color: #616161; }
       .team-footer-list__link span {
         margin-left: 7px; }
+
+.statistic {
+  background: url("../../images/statistic/bg.png") no-repeat center;
+  background-size: cover;
+  position: relative;
+  padding: 120px 0; }
+  .statistic:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 39, 50, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100; }
+  .statistic .container {
+    max-width: 1000px;
+    position: relative;
+    z-index: 1000; }
+  .statistic__body {
+    display: flex;
+    justify-content: space-between; }
+  .statistic__column {
+    flex: 0 0 25%; }
+  .statistic-item {
+    text-align: center; }
+    .statistic-item__iccon {
+      margin-bottom: 15px; }
+    .statistic-item__number {
+      font-size: 20px;
+      color: #fff;
+      font-weight: 500;
+      margin-bottom: 20px; }
+    .statistic-item__title {
+      font-size: 15px;
+      color: #fff;
+      margin-bottom: 25px;
+      font-weight: normal; }
+
+.steps {
+  padding: 120px 0;
+  background: #ffffff; }
+  .steps__inner {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column; }
+  .steps__item {
+    margin-top: -10px; }
+  .steps__column {
+    margin: 0 auto; }
+  .steps .item-1 {
+    position: relative; }
+  .steps .item-2 {
+    position: relative; }
+  .steps__block_first {
+    position: absolute;
+    top: -40px;
+    left: -300px;
+    z-index: 2; }
+  .steps__block_secondary {
+    position: absolute;
+    bottom: 40px;
+    left: 300px;
+    z-index: 2; }
+  .steps-block {
+    display: flex;
+    width: 450px;
+    background: #fff;
+    padding: 50px 40px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #fc5f45; }
+    .steps-block__number {
+      position: relative;
+      margin-top: -15px;
+      font-size: 50px;
+      color: #e0e0e0;
+      font-weight: 700;
+      font-family: 'Libre Baskerville', serif;
+      margin-right: 25px; }
+      .steps-block__number:after {
+        content: " ";
+        display: block;
+        background: url("../../images/steps/number-line.png") no-repeat;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 2; }
+    .steps-block__title {
+      font-size: 25px;
+      color: #272727;
+      font-weight: normal;
+      margin-bottom: 20px; }
+    .steps-block__description {
+      font-size: 15px;
+      color: #616161;
+      line-height: 1.8; }
+    .steps-block__img img {
+      display: block; }

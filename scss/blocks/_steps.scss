@@ -1,0 +1,84 @@
+.steps{
+    padding: 120px 0;
+    background: #ffffff;
+    &__inner{
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item{
+        margin-top: -10px;
+    }
+
+    &__column{
+        margin: 0 auto;
+    }
+    
+    .item-1{
+        position: relative;
+    }
+    .item-2{
+        position: relative;
+    }
+
+    &__block_first{
+        position: absolute;
+        top:-40px;
+        left:-300px;
+        z-index: 2;
+    }
+    &__block_secondary{
+        position: absolute;
+        bottom:40px;
+        left:300px;
+        z-index: 2;
+    }
+    &-block{
+        display: flex;
+        width: 450px;
+        background: #fff;
+        padding: 50px 40px;
+        box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
+        border-bottom: 3px solid #fc5f45;
+        &__number{
+            position: relative;
+            margin-top: -15px;
+            font-size: 50px;
+            color:#e0e0e0;
+            font-weight: 700;
+            @include fBasker;
+            margin-right: 25px;
+            
+            &:after{
+                content: " ";
+                display: block;
+                background: url("../../images/steps/number-line.png") no-repeat;
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                top:5px;
+                left:5px;
+                z-index: 2;
+            }
+        }
+        &__title{
+            font-size: 25px;
+            color:#272727;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+        &__description{
+            font-size: 15px;
+            color:$main-color;
+            line-height: 1.8;
+        }
+        &__img{
+            img{
+                display: block;
+                
+            }
+        }
+    }
+}
+
