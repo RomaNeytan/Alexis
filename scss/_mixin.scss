@@ -9,3 +9,14 @@
 @mixin fSacram(){
     font-family: 'Sacramento', cursive;
 }
+
+@mixin btn(){
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    border-radius: 25px;
+}

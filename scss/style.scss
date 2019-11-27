@@ -34,6 +34,10 @@ p{
     margin: 0 0 4px;
 }
 
+// Btn
+
+@import "btn.scss";
+
 // Grid
 
 @import "grid.scss";
@@ -53,6 +57,9 @@ p{
 @import "blocks/team";
 @import "blocks/statistic";
 @import "blocks/steps";
+@import "blocks/price";
+@import "blocks/testimonials";
+@import "blocks/choose";
 
 
 

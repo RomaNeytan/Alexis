@@ -1,0 +1,38 @@
+.btn-first{
+    @include btn;
+    border: 2px solid #38c695;
+    background: transparent;
+    color:#38c695;
+    transition: background .2s linear,color .2s linear;
+
+    &:hover{
+        background: #38c695;
+        color:#fc5f45;
+    }
+}
+
+.btn-secondary{
+    @include btn;
+    border:none;
+    background: #fc5f45;
+    color:#fff;
+    transition: background .2s linear;
+
+    &:hover{
+        background: #b27cf5;
+    }
+}
+
+.btn-three{
+    @include btn;
+    border:2px solid #b27cf5;
+    background: transparent;
+    color:#b27cf5;
+
+    transition: background .2s linear,color .2s linear;
+
+    &:hover{
+        background: #b27cf5;
+        color:#fc5f45;
+    }
+}

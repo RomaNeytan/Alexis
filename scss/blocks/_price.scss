@@ -1,0 +1,90 @@
+.price{
+    background: #f7f7f7;
+    padding: 120px 0;
+    &__body{
+        display: flex;
+        margin-top: 75px;
+    }
+    &__column{
+        flex:0 1 33.33333%;
+        background: #fff;
+        box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
+        
+        & + &{
+            margin-left: 20px;
+        }
+    }
+    &-item{
+        text-align: center;
+        padding: 35px 60px;
+        border-top:3px solid #38c695;
+        &__secondary{
+            border-top:3px solid #fc5f45;
+        }
+        &__three{
+            border-top:3px solid #b27cf5;
+        }
+        &__title{
+            font-size: 20px;
+            color:$main-color;
+            margin-bottom: 20px;
+        }
+        &__block{
+            width: 118px;
+            padding: 30px 15px;
+            background: #38c695;
+            border-radius: 50%;
+            margin: 0 auto;
+            text-align: center;
+            box-shadow: 0 0 3px 100% rgb(56,198,149);
+
+            &_two{
+                background: #fc5f45;
+            }
+            &_three{
+                background: #b27cf5;
+            }
+        }
+        &__line{
+            height: 130px;
+            width: 130px;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            border:3px solid #38c695;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &_two{
+                border: 3px solid #fc5f45;
+            }
+            &_three{
+                border: 3px solid #b27cf5;
+            }
+        }
+        &__price{
+            font-size: 25px;
+            color:#fff;
+        }
+        &__month{
+            font-size: 13px;
+            color:#fff;
+        }
+        &-list{
+            &__item{
+                font-size: 15px;
+                color:$main-color;
+
+                & + &{
+                    margin-top: 20px;
+                }
+                span{
+                    color:#272727;
+                    font-weight: 500;
+                }
+            }
+        }
+        &__button{
+            margin-top: 30px;
+        }
+    }
+}

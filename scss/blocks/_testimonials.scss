@@ -1,0 +1,53 @@
+.testimonials{
+    background: rgba(38,39,50,.85);
+    padding: 120px 0;
+
+    .section-header__title{
+        color:#ffffff;
+    }
+    .section-header__text{
+        color:#ffffff;
+    }
+    &__item{
+        margin-top: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img{
+        border: 10px solid #a3a3a3;
+        img{
+            max-width: 100%;
+            display: block;
+        }
+    }
+    &__content{
+        padding: 45px 75px 45px 45px;
+        width: 750px;
+        background: #fff;
+        border-bottom: 3px solid #fc5f45;
+    }
+    &__text{
+        font-size: 15px;
+        color:$main-color;
+        line-height: 1.8;
+        margin-bottom: 30px;
+    }
+    &__name{
+        font-size: 40px;
+        @include fSacram;
+        color:#272727;
+        margin-bottom: 15px;
+    }
+    &__surname{
+        font-size: 18px;
+        color:#272727;
+        font-weight: 500;
+        margin-bottom: 7px;
+    }
+    &__pos{
+        font-size: 13px;
+        color:#fc5f45;
+    }
+}
+
