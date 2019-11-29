@@ -1,0 +1,57 @@
+.subscribe{
+    background: #fff;
+    padding: 120px 0;
+
+    &__wrapper{
+        text-align: center;
+    }
+    &__title{
+        font-size: 30px;
+        color:#272727;
+        margin-bottom: 40px;
+        font-weight: normal;
+    }
+
+    &-form{
+        display: flex;
+        justify-content: center;
+        &__email{
+            .input{
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                font-size: 16px;
+                color:$main-color;
+                text-align: left;
+                padding: 0 100px 0 25px;
+                border: 2px solid #efefef;
+                border-right: 0;
+                background: #f7f7f7;
+                height: 50px;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        &__submit{
+            .button{
+                cursor: pointer;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                font-size: 16px;
+                color:#fff;
+                text-transform: uppercase;
+                font-weight: 600;
+                text-align: center;
+                height: 50px;
+                padding: 0 25px;
+                border: none;
+                background: #fc5f45;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+}
