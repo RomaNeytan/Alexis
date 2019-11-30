@@ -1,6 +1,5 @@
 .choose{
     background: #ffffff;
-    padding: 120px 0;
     &__body{
         margin: 75px -35px 0;
         display: flex;
@@ -46,6 +45,55 @@
             font-size: 25px;
             color:#272727;
             margin-right: 20px;
+        }
+    }
+
+    @media (max-width:$screen-md-max){
+        &-item{
+            &__description{
+                font-size: 14px;
+            }
+        }
+    }
+
+    @media (min-width:$screen-md){
+        padding: 120px 0;
+    }
+    
+    @media (max-width:$screen-sm-max){
+        padding: 60px 0;
+
+        &__body{
+            margin: 45px -35px 0;
+        }
+        &__column{
+            flex-basis: 50%;
+            margin-bottom: 30px;
+        }
+
+        &-footer{
+            margin-top: 35px;
+            &__title{
+                font-size: 22px;
+            }
+        }
+    }
+
+    @media (min-width:$screen-sm){
+    }
+    
+    @media (max-width:$screen-xs-max){
+        &-footer{
+            margin-top: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            &__title{
+                margin-bottom: 15px;
+            }
+        }
+        &__column{
+            flex-basis: 100%;
         }
     }
 }

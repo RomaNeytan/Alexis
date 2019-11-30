@@ -1,6 +1,7 @@
 .header{
     background: #fff;
     padding: 24px 0;
+    position: relative;
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -10,26 +11,15 @@
         a{
             color:$main-color;
         }
-        line-height: 0.771;
-        font-size: 35px;
         @include fWisd;
 
         &_start{
             color:#fc5f45;
         }
     }
-    &__nav{
-
-    }
     &-list{
         display: flex;
-        &__nav{
-            & + &{
-                margin-left: 18px;
-            }
-        }
         &__link{
-            font-size: 14px;
             color:#272727;
             font-weight: 600;
             position: relative;
@@ -52,6 +42,61 @@
                 z-index: 1;
 
                 transition: width .2s linear;
+            }
+        }
+    }
+
+    @media (min-width:$screen-lg){
+        &__logo{
+            font-size: 35px;
+        }
+        &-list{
+            &__link{
+                font-size: 14px;
+            }
+        }
+    }
+    
+    @media (max-width:$screen-md-max){
+        &__logo{
+            font-size: 30px;
+        }
+
+        &-list{
+            &__link{
+                font-size: 10px;
+            }
+        }
+    }
+
+    @media (min-width:$screen-md){
+        &-list{
+            &__nav{
+                & + &{
+                    margin-left: 18px;
+                }
+            }
+        }
+    }
+
+    @media (max-width:$screen-sm-max){
+        &__nav{
+            width: 100%;
+            display: none;
+            position: absolute;
+            top:100%;
+            left:0;
+            z-index: 1;
+            background: #fff;
+        }
+
+        &-list{
+            display: flex;
+            flex-direction: column;
+            padding: 7px 0;
+            
+            &__nav{
+                margin-left: 15px;
             }
         }
     }

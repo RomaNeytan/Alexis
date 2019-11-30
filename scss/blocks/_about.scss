@@ -1,8 +1,7 @@
 .about{
     background:#fff;
-    padding: 150px 0;
     .container{
-
+        
     }
     &__body{
         position: relative;
@@ -53,6 +52,76 @@
         
         & + &{
             margin-top: 20px;
+        }
+    }
+
+    @media (max-width:$screen-lg-max){
+        &__content{
+            width: 550px;
+            height: 550px;
+        }
+    }
+
+    @media (max-width:$screen-md-max){
+        &__content{
+            left:35%;
+            width: 460px;
+            padding: 20px 70px 80px 75px;
+        }
+    }
+
+    @media (min-width:$screen-md){
+        padding: 150px 0;
+    }
+
+    @media (max-width:$screen-sm-max){
+        padding: 75px 0;
+        &__content{
+           left:16%;
+        }
+        &__title{
+           
+        }
+        &__text{
+            
+        }
+        &__img{
+            img{
+                width: 450px;
+                height: 630px;
+            }
+        }
+    }
+
+    @media (max-width:$screen-xs-max){
+        &__content{
+            width: 340px;
+            padding: 20px 20px 0 20px;
+        }
+        &__title{
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+        &__img{
+            img{
+                width: 400px;
+                height: 510px;
+            }
+        }
+    }
+
+    @media (max-width:440px){
+        &__img{
+            img{
+                opacity: 0;
+            }
+        }
+        &__content{
+            left:0%;
+            width: 295px;
+        }
+        &__text{
+            font-size: 14px;
         }
     }
 }

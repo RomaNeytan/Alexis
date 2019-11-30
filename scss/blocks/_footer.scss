@@ -1,5 +1,4 @@
 .footer{
-    margin-top:120px;
     &:after{
         content: " ";
         display: block;
@@ -16,9 +15,6 @@
     }
     &-col{
         flex-basis: 25%;
-        & + &{
-            margin-left: 75px;
-        }
         &__logo{
             margin-top: 25px;
             font-size: 50px;
@@ -52,10 +48,91 @@
         &__social{
             display: flex;
         }
-        &__item{
-            & + &{
-                margin-left: 15px;
+    }
+
+    @media (min-width:$screen-xl){
+    }
+    
+    @media (max-width:$screen-lg-max){
+        &::after{
+            background: none;
+        }
+    }
+
+    @media (min-width:$screen-lg){
+        &-col{
+            &__item{
+                & + &{
+                    margin-left: 15px;
+                }
             }
+        }
+    }
+    
+    @media (max-width:$screen-md-max){
+        &__block{
+            padding: 30px;
+        }
+        &-col{
+            &__title{
+                font-size: 16px;
+            }
+            &__address{
+                address{
+                    font-size: 13px;
+                }
+            }
+            &__social{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    // 768-767
+
+    @media (min-width:$screen-md){
+        margin-top:120px;
+        &-col{
+            & + &{
+                margin-left: 75px;
+            }
+        }
+    }
+    
+    @media (max-width:$screen-sm-max){
+        margin-top:60px;
+
+        &__block{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &-col{
+            max-width: 200px;
+            flex-basis: 50%;
+            margin-bottom: 25px;
+            margin-left: 70px;
+            &__logo{
+                margin-top: 0;
+            }
+            &__social{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            &__item{
+                & + &{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    @media (max-width:689px){
+        &-col{
+            margin-left: 0;
+            flex-basis: 100%;
         }
     }
 }

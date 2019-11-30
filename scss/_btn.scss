@@ -4,7 +4,7 @@
     background: transparent;
     color:#38c695;
     transition: background .2s linear,color .2s linear;
-
+    font-size: 16px;
     &:hover{
         background: #38c695;
         color:#fc5f45;
@@ -17,7 +17,7 @@
     background: #fc5f45;
     color:#fff;
     transition: background .2s linear;
-
+    font-size: 16px;
     &:hover{
         background: #b27cf5;
     }
@@ -28,7 +28,7 @@
     border:2px solid #b27cf5;
     background: transparent;
     color:#b27cf5;
-
+    font-size: 16px;
     transition: background .2s linear,color .2s linear;
 
     &:hover{
@@ -36,3 +36,15 @@
         color:#fc5f45;
     }
 }
+
+    @media (max-width:330px){
+        .btn-first{
+            font-size: 15px;
+        }
+        .btn-secondary{
+            font-size: 15px;
+        }
+        .btn-three{
+            font-size: 15px;
+        }
+    }

@@ -1,6 +1,5 @@
 .blog{
     background: #f7f7f7;
-    padding: 120px 0;
     &__body{
         margin-top: 75px;
         display: flex;
@@ -8,15 +7,14 @@
     &-column{
         flex: 0 0 50%;
 
-        & + &{
-            padding-left: 25px;
-        }
         &__header{
            position: relative;
         }
         &__img{
             img{
+                max-width: 100%;
                 display: block;
+                height: auto;
             }
         }
         &__block{
@@ -95,6 +93,71 @@
     }
     .color-b{
         color:#272727;
+    }
+
+    @media (min-width:$screen-lg){
+    }
+    
+    @media (max-width:$screen-md-max){
+        &-column{
+            &__item{
+                padding: 25px 15px;
+            }
+            &__footer{
+                padding: 25px 15px;
+            }
+        }
+    }
+
+    @media (min-width:$screen-md){
+        padding: 120px 0;
+        &-column{
+            & + &{
+                padding-left: 25px;
+            }
+        }
+    }
+    
+    @media (max-width:$screen-sm-max){
+        padding: 60px 0;
+        &__body{
+            margin-top: 35px;
+            display: flex;
+            flex-direction: column;
+        }
+        &-column{
+            &__header{
+                max-width: 500px;
+                margin: 0 auto 25px;
+            }
+            &__footer{
+                max-width: 500px;
+                margin: 0 auto 25px;
+            }
+            &__item{
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @media (min-width:$screen-sm){
+    }
+    
+    @media (max-width:$screen-xs-max){
+        &-column{
+            &__name{
+                font-size: 12px;
+            }
+            &__title{
+                font-size: 15px;
+                line-height: 1.4;
+            }
+            &__text{
+                font-size: 11px;
+                line-height: 1.6;
+            }
+        }
     }
 }
 

@@ -1,15 +1,12 @@
 .portfolio{
     background: #ffffff;
-    padding: 120px 0 95px;
     &__body{
         display: flex;
         flex-wrap: wrap;
-        margin: 70px -10px 0;
     }
     &__column{
         flex:0 1 33.33333%;
         padding: 0 10px 25px;
-        
     }
     &-item{
         position: relative;
@@ -61,6 +58,24 @@
             font-size: 18px;
             font-weight: 500;
             color:$title-color;
+        }
+    }
+    
+    @media (min-width:$screen-md){
+        padding: 120px 0 95px;
+
+        &__body{
+            margin: 70px -10px 0;
+        }
+    }
+    
+    @media (max-width:$screen-sm-max){
+        padding: 60px 0 45px;
+        &__column{
+            flex-basis: 50%;
+        }
+        &__body{
+            margin: 35px -10px 0;
         }
     }
 }

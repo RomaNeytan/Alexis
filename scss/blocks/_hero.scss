@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 500px;
 
     &-wrapper{
         max-width: 850px;
@@ -12,7 +13,6 @@
         &-top{
             &__title{
                 font-weight: normal;
-                font-size: 60px;
                 color:#ffffff;
                 @include fBasker;
             }
@@ -63,7 +63,6 @@
             }
         }
         &__features{
-            margin: 70px auto 0;
             max-width: 800px;
             display: flex;
         }
@@ -72,9 +71,6 @@
             padding: 0 15px;
         }
         &-item{
-            &__iccon{
-                margin-bottom: 20px;
-            }
             &__link{
                 width: 35px;
                 height: 35px;
@@ -92,7 +88,6 @@
                 }
             }
             &__title{
-                font-size: 18px;
                 font-weight: 500;
                 color:#38c695;
                 text-transform: uppercase;
@@ -102,6 +97,84 @@
                 }
                 &--3{
                     color:#feb960;
+                }
+            }
+        }
+    }
+
+    @media (min-width:$screen-lg){
+        &-wrapper{
+            &-top{
+                &__title{
+                    font-size: 60px;
+                }
+            }
+            &-item{
+                &__title{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    
+    @media (max-width:$screen-md-max){
+        &-wrapper{
+            &-top{
+                &__title{
+                    font-size: 45px;
+                }
+            }
+            &-item{
+                &__title{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    @media (min-width:$screen-md){
+        &-wrapper{
+            &-item{
+                &__iccon{
+                    margin-bottom: 20px;
+                }
+            }
+            &__features{
+                margin: 70px auto 0;
+            }
+        }
+    }
+    
+    @media (max-width:$screen-sm-max){
+        &-wrapper{
+            &-item{
+                &__iccon{
+                    margin-bottom: 10px;
+                }
+            }
+            &__features{
+                margin: 45px auto 0;
+            }
+        }
+    }
+
+    @media (min-width:$screen-sm){
+    }
+    
+    @media (max-width:$screen-xs-max){
+        &-wrapper{
+            &-top{
+                &__title{
+                    font-size: 25px;
+                }
+            }
+            &__features{
+                display: flex;
+                flex-direction: column;
+            }
+            &__column{
+                & + &{
+                    margin-top: 25px;
                 }
             }
         }

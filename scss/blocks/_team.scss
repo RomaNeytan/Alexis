@@ -7,9 +7,6 @@
         margin-top:60px;
     }
     &__column{
-        & + &{
-            margin-left: 25px;
-        }
         background: #fff;
         flex:0 1 25%;
         border-bottom: 3px solid #fc5f45;
@@ -48,11 +45,16 @@
             color:$main-color;
             text-align: center;
         }
+
+        &__img{
+            img{
+                max-width:100%;
+            }
+        }
     }
 
     &-footer{
         position: relative;
-        margin-right: -27px;
         &:before{
             content: " ";
             display: block;
@@ -95,6 +97,7 @@
         &__img{
             padding-right: 30px;
             position: relative;
+            
             &:before{
                 content: " ";
                 display: block;
@@ -126,6 +129,83 @@
                     margin-left: 7px;
                 }
             }
+        }
+    }
+
+    @media (min-width:$screen-xl){
+        &__column{
+            & + &{
+                margin-left: 25px;
+            }
+        }
+
+        &-footer{
+            margin-right: -27px;
+        }
+    }
+    
+    @media (max-width:$screen-lg-max){
+        &__row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__column{
+            flex-basis: 50%;
+            max-width:350px;
+            margin-bottom: 25px;
+
+            &_2,&_4{
+                margin-left: 25px;
+            }
+        }
+        &-item{
+            text-align: center;
+            &__img{
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @media (min-width:$screen-md){
+        padding: 140px 0;
+    }
+    
+    @media (max-width:$screen-sm-max){
+        padding: 70px 0;
+
+        &__row{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__column{
+            flex-basis:100%;
+            margin: 0 auto 25px;
+        }
+
+        &-footer{
+            &__text{
+                font-size: 13px;
+            }
+            &__body{
+                flex-direction: column;
+                justify-content: center;
+            }
+            &__text{
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    @media (min-width:$screen-sm){
+    }
+    
+    @media (max-width:$screen-xs-max){
+        &-footer{
+            padding: 20px;
         }
     }
 }

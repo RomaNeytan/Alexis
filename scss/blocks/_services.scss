@@ -1,14 +1,10 @@
 .services{
     background: #f7f7f7;
-    padding: 120px 0;
     &__inner{
         display: flex;
-        margin-top: 75px;
+        justify-content: space-between;
     }
     &__column{
-        & + &{
-            margin-left: 30px;
-        }
         padding: 60px 20px;
         border-bottom: 3px solid #fc5f45;
         flex: 0 1 25%;
@@ -26,20 +22,76 @@
         }
     }
     &-item{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
         text-align: center;
-        &__iccon{
-            margin-bottom: 20px;
-        }
+       
         &__title{
-            font-size: 20px;
             color:$main-color;
             font-weight: 500;
-            margin-bottom:30px;
+            flex:1 1 auto;
         }
         &__description{
             font-size: 15px;
             color:$main-color;
             line-height: 1.667;
+        }
+    }
+
+    @media (min-width:$screen-lg){
+        &__column{
+            & + &{
+                margin-left: 30px;
+            }
+        }
+    }
+    
+    @media (max-width:$screen-md-max){
+        &__inner{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__column{
+            flex: 0 1 49%;
+            margin-bottom: 25px;
+        }
+    }
+
+    @media (min-width:$screen-md){
+        padding: 120px 0 95px 0;
+        &__inner{
+            margin-top: 75px;
+        }
+        &-item{
+            &__iccon{
+                margin-bottom: 20px;
+            }
+            &__title{
+                margin-bottom:30px;
+            }
+        }
+    }
+    
+    @media (max-width:$screen-sm-max){
+        padding: 60px 0;
+        &__inner{
+            margin-top:50px;
+        }
+        &-item{
+            &__iccon{
+                margin-bottom: 10px;
+            }
+            &__title{
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    @media (max-width:495px){
+        &__column{
+            flex-basis: 100%;
+            padding: 30px 15px;
         }
     }
 }

@@ -1,6 +1,5 @@
 .price{
     background: #f7f7f7;
-    padding: 120px 0;
     &__body{
         display: flex;
         margin-top: 75px;
@@ -9,10 +8,6 @@
         flex:0 1 33.33333%;
         background: #fff;
         box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
-        
-        & + &{
-            margin-left: 20px;
-        }
     }
     &-item{
         text-align: center;
@@ -85,6 +80,53 @@
         }
         &__button{
             margin-top: 30px;
+        }
+    }
+
+    @media (min-width:$screen-lg){
+        &__column{
+            & + &{
+                margin-left: 20px;
+            }
+        }
+    }
+    
+    @media (max-width:$screen-md-max){
+        &__body{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__column{
+            flex-basis: 48%;
+            margin-bottom: 25px;
+        }
+    }
+
+    @media (min-width:$screen-md){
+        padding: 120px 0;
+        &__column{
+            &:first-child{
+                margin-right: 15px;
+            }
+        }
+    }
+    
+    @media (max-width:$screen-sm-max){
+        padding: 60px 0 35px 0;
+
+        &__column{
+            flex-basis: 100%;
+            max-width: 400px;
+            margin: 0 auto 25px;
+        }
+        &-item{
+            &-list{
+                &__item{
+                    & + &{
+                        margin-top: 7px;
+                    }
+                }
+            }
         }
     }
 }

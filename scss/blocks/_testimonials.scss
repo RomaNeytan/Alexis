@@ -1,6 +1,5 @@
 .testimonials{
     background: rgba(38,39,50,.85);
-    padding: 120px 0;
 
     .section-header__title{
         color:#ffffff;
@@ -48,6 +47,46 @@
     &__pos{
         font-size: 13px;
         color:#fc5f45;
+    }
+
+    @media (min-width:$screen-lg){
+    }
+    
+    @media (max-width:$screen-md-max){
+        &__content{
+            padding: 25px 45px;
+            width: 550px;
+        }
+        &__text{
+            font-size: 13px;
+        }
+    }
+
+    @media (min-width:$screen-md){
+        padding: 120px 0;
+    }
+    
+    @media (max-width:$screen-sm-max){
+        padding: 60px 0;
+        &__item{
+            margin-top: 35px;
+        }
+        &__img{
+            display: none;
+        }
+    }
+
+    @media (max-width:$screen-xs-max){
+        &__content{
+            padding: 25px 15px;
+        }
+        &__text{
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+        &__name{
+            margin-bottom: 0;
+        }
     }
 }
 
